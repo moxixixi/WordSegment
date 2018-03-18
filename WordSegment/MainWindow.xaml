@@ -1,0 +1,15 @@
+﻿<Window x:Class="WordSegment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="640" Width="860">
+    <Grid>
+        <TabControl x:Name="TabCtrl" HorizontalAlignment="Left" Height="640" Margin="0,0,0,0" VerticalAlignment="Top" Width="860">
+            <TabItem Header="文档识别">
+                <Frame Source="FileRecognition.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="文档检索">
+                <Frame Source="FileRecognition.xaml" Background="White" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
