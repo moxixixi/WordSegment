@@ -6,10 +6,10 @@
       mc:Ignorable="d"
 	Title="FileRecognition" Height="500" Width="500">
     <Grid Background="White">
-        <TextBox  Width="300" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,100,0,0" IsReadOnly="True" />
-        <Button x:Name="BtnAdd" Width="80" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-100,160,0,0" Content="选择文件"/>
-        <Button x:Name="BtnRecognize" Width="80" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="100,160,0,0" Content="识别文件"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="300" Text="文档识别，请选择文件进行分词识别"/>
+        <TextBox  x:Name="txtBox" Width="300" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,100,0,0" IsReadOnly="True" VerticalContentAlignment="Center" />
+        <Button x:Name="BtnAdd" Width="80" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-100,160,0,0" Content="选择文件" Click="BtnAdd_Click"/>
+        <Button x:Name="BtnRecognize" Width="80" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="100,160,0,0" Content="识别文件" Click="BtnRecognize_Click"/>
         <ProgressBar x:Name="Pgb" Width="300" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,220,0,0" />
-        <TextBlock x:Name="txtPercent" Width="40" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,220,0,0" Text="100%" TextAlignment="Center"/>
     </Grid>
 </Page>
